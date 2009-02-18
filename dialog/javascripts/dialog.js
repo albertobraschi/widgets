@@ -11,6 +11,7 @@ var Dialog = new Class({
         display:   'none'
       }
     });
+		//alert('Initializing Dialog');
     
     /*var indicator = new Element('div', {
       'class': 'indicator',
@@ -99,10 +100,10 @@ var Dialog = new Class({
             finished();
           }.bind(this)
         }).get();
-      }
-    };
-  }
-});
+      } // end if options
+    }; // this.render
+  } // initialize
+}); // new Class
 
 Element.implement({
   center: function() {
